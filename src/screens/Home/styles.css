@@ -1,0 +1,87 @@
+.nav{
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    top:0;
+}
+
+.main-container{
+    width: 95%;
+    margin: auto;
+}
+
+.appName{
+    font-size: 30px;
+}
+
+.style-letters{
+    color:#9694FF
+}
+
+.processing-container{
+    /* max-height: 500px; */
+    height: fit-content;
+    margin-bottom: 30px;
+    display: grid;
+    align-items: center;
+}
+.processing-container:last-child{
+    border: 2px solid #9694FF;
+    display: block;
+    color:#9694FF;
+}
+.processing-container:last-child *{
+    margin-left: 10px;
+}
+.camera-cta,.save-cta{
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 120px;
+    border-color: #9694FF;
+    color: #9694FF;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    margin-bottom: 30px;
+}
+
+.photography-img{
+    height: auto;
+    width: 50%;
+    display: block;
+    margin: auto
+}
+
+.capture{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #9694FF;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#camera-icon{
+    color:#9694FF;
+}
+
+.userImage{
+    width: 15%;
+    height:auto;
+    display: block;
+    margin: auto;
+}
+
+#proceed-cta{
+    width: 140px;
+    margin-top: 20px;
+    background-color: #9694FF;
+    color:#fff;
+}
