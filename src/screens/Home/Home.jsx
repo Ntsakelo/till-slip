@@ -185,6 +185,7 @@ const Home = () => {
           </div>}
 
         <button type="button" className="camera-cta" id="proceed-cta" onClick={handleSaveData}>Save & Proceed</button>
+      
         </Grid>
       </Grid>
     </div>

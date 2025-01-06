@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 
-const url = 'http://localhost:8000/api'
+const url = 'https://till-slip-api.uc.r.appspot.com/api'
 
 const usePost = () => {
    const [result,setResult] = useState(null)
