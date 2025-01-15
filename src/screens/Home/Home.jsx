@@ -36,9 +36,9 @@ const Home = () => {
   const navigate = useNavigate()
   const [facingMode,setFacingMode] = useState('user')
 
-  useEffect(() => {
-     console.log(fileBlob)
-  },[fileBlob])
+  // useEffect(() => {
+  //    console.log(fileBlob)
+  // },[fileBlob])
 
 
   const handleCameraMode = () => {
@@ -48,6 +48,7 @@ const Home = () => {
   useEffect(() => {
     if (result && result.status === 200) {
       sessionStorage.setItem('message', result.data.message)
+      console.log(result.data.response)
       navigate('/thankyou')
     } else {
       console.log(error)
@@ -92,7 +93,7 @@ const Home = () => {
           canvas.height = newHeight;
           ctx.drawImage(img,0,0,newWidth,newHeight);
           const resizedBase64 = canvas.toDataURL('image/jpeg', 0.5)
-          console.log(resizedBase64)
+          // console.log(resizedBase64)
           setImgUrl(resizedBase64)
           const blob = base64ToBlob(resizedBase64,uploadedFile.type)
           setFileBlob(blob)
